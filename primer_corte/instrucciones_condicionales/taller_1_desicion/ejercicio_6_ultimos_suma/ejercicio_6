@@ -1,0 +1,17 @@
+# sumar los dos últimos dígitos de un número y que la suma de un número de 1 dígito.
+
+# Input 
+n = int(input("Digite un numero entero: "))
+
+# Processing
+z = n % 10
+x = int((n % 100) / 10)
+s = z + x
+
+if s < 10:
+    c = "los ultimos dos digitos sumados dan un número de un digito y es:"
+else:
+    c = "los ultimos dos digitos sumados dan un numero de mas de un digito y es:"
+
+# Output
+print(c, str(s))

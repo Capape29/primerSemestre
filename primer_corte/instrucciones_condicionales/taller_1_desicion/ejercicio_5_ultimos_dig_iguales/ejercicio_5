@@ -1,0 +1,16 @@
+# Construir un programa que lea un número entero y que determine si sus dos últimos dígitos son iguales 
+
+# Input 
+n = int(input("Digite un numero entero: "))
+
+# Processing
+z = n % 10
+x = int((n % 100) / 10)
+
+if z == x:
+    c = "los ultimos dos digitos son iguales", x, "=", z
+else:
+    c = "los ultimos dos digitos no son iguales", x, "≠", z
+
+# Output
+print(c)
